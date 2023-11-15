@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+		<title>enter/reg</title>
+		<link rel="stylesheet" href="main.css">
+		<link rel="stylesheet" href="enter.css">
+	</head>
+	<body class="enter">
+		<input id="element-toggle" type="checkbox" />
+		<div class="modal-container"id="myModal">
+			<div class="modal" >
+				<div>
+					<h4>Изменение пароля</h4>
+					<label class="button" for="element-toggle"><img src="close-btn.svg"></label>
+				</div>
+				<input type="text" placeholder="Введите старый пароль">
+				<input type="text" placeholder="Введите новый пароль">
+				<input type="submit" value="Изменить пароль" class="border-btn">
+			</div>
+		</div>
+		<img src="enter-icon.png">
+		<main>
+			<h2>ВХОД В ЛИЧНЫЙ КАБИНЕТ</h2>
+			<form>
+				<input type="text" placeholder="Имя пользователя или e-mail *">
+				<input type="text" placeholder="Пароль *">
+			</form>
+			<label style="margin-bottom: 15px;" class="button" for="element-toggle">Изменить пароль</label>
+			<div>
+				<a class="special-link-n" href=""><input type="submit" value="">ВОЙТИ</a>
+				<div>
+					Ещё нет аккаунта?
+					<a href="">Создайте его сейчас</a>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>

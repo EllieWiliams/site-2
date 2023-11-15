@@ -1,0 +1,68 @@
+.product {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	font-size: 20px;
+	font-weight: 500;
+}
+.product > div {
+	width: 50%;
+	min-width: 400px;
+}
+.product > div:nth-child(1) {
+	padding-right: 80px;
+}
+.product > div:nth-child(2) {
+	padding-left: 80px;
+}
+.product p {
+	margin-top: 15px;
+	font-size: 16px;
+	font-weight: 400;	
+}
+.product h1 {
+	margin-bottom: 50px;
+}
+.statistics {
+	display: flex;
+	font-size: 14px;
+	font-weight: 400;
+}
+.statistics > div {
+	display: flex;
+	align-items: center;
+	margin-right: 40px;
+	margin-top: 25px;
+}
+.statistics span {
+	color: #2B7356;
+}
+.statistics img {
+	margin-right: 10px;
+}
+.choose-ticket, .choose-ticket > div {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.choose-ticket {
+	margin-top: 50px;
+}
+.choose-ticket button {
+	margin: 0 30px 0 0;
+}
+.choose-ticket span {
+	width: 50px;
+}
+.choose-ticket h2 {
+	margin: 0 0 0 80px;
+}
+@media screen and (max-width: 1330px) {
+	.product {
+		flex-direction: column-reverse;
+	}
+	.product > div {
+		width: 100%;
+	}
+}

@@ -1,0 +1,113 @@
+.user-info h3 {
+	white-space: pre-wrap;
+}
+.user-block h4:not(.card h4) {
+	margin: 0 0 0 30px;
+}
+.profile h5 {
+	position: relative;
+	text-align: left;
+	padding: 0;
+	margin-bottom: 30px;
+}
+.profile header, .profile nav, .profile nav a {
+	color: #212134;
+	background: #fff;
+	justify-content: flex-end;
+}
+.profile header {
+	flex-direction: row;
+	justify-content: space-between;
+	white-space: nowrap;
+	padding-bottom: 0;
+}
+.profile nav {
+	margin-left: 60px;
+	width: 50%;
+}
+.profile nav > div, .button {
+	margin-left: 20px;
+}
+.user-block > div {
+	padding: 40px 30px 30px;
+	margin: 0 20px 20px 0;
+	border: #E6E6E6 solid 1px;
+	
+	font-weight: 500;
+	font-size: 20px;
+}
+.user-data > div {
+	display: flex;
+	min-width: 700px;
+}
+.profile .img-cont {
+	width: 204px;
+	height: 204px;
+	border-radius: 120px;
+	overflow: hidden;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	background: url(default-ava.png);
+	background-position: center cover;
+	background-repeat: no-repeat;
+}
+.profile .img-cont img {
+	object-fit: cover;
+	transform: scale(0.65);
+}
+.user-info {
+	margin-left: 50px;
+	display: flex;
+	flex-direction: column;
+}
+.user-tickets li {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+}
+.user-tickets img {
+	width: 20px;
+	height: auto;
+	margin-right: 15px;
+}
+.user-bonus > div {
+	display: flex;
+	align-items: center;
+}
+.user-bonus img {
+	width: 30px;
+	height: auto;
+	margin-left: 20px;
+}
+
+.card .other-data:not(.card .other-data span) {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+.card .other-data > div {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+.other-data > div > div {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+
+	color: #212134;
+	font-size: 16px;
+}
+@media screen and (max-width: 1280px) {
+	.user-data > div {
+	min-width: 420px;
+	}
+	.user-block > div {
+		font-size: 14px;
+	}
+}
