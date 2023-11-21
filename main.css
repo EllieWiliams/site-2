@@ -67,7 +67,7 @@ h5:not(.inner h5) {
 	color: #000;
 	margin-top: 25px;
 }
-ul li {
+ul li:not(.free ul li) {
 	list-style-type: none;
 	display: flex;
 	align-items: center;
@@ -81,6 +81,7 @@ button, input[type=submit] {
 	font-size: 18px;
 	font-weight: 900;
 	text-transform: uppercase;
+	white-space: nowrap;
 }
 .border-btn {
 	padding: 17px 25px;
@@ -192,6 +193,10 @@ footer > div:nth-child(3) img {
   padding: 30px;
   border-radius: 12px;
   background: #fff;
+  box-shadow: 0px 0px 15px #00000080;
+}
+.profile .modal {
+	box-shadow: 0px 0px 15px #2B735660;
 }
 .button:hover, input[type=submit] {
 	cursor: pointer;
@@ -228,4 +233,11 @@ footer > div:nth-child(3) img {
 .modal img:hover {
 	opacity: 1;
 	/*cursor: url(cursor-pointer.svg),pointer;*/
+}
+.modal span {
+	max-width: 400px;
+	width: 100%;
+	color: #979797;
+	font-weight: 300;
+	margin-bottom: 30px;
 }

@@ -105,7 +105,7 @@
 .winner .img-container div::before {
 	display: none;
 }
-.img-container div, h5 {
+.img-container div, .img-container h5 {
 	width: 100%;
 	display: block;
 	position: absolute;
