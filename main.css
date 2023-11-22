@@ -106,7 +106,7 @@ header > div {
 	width: 100%;
 	justify-content: space-between;
 }
-header a {
+header a:not(.profile header a) {
 	margin-left: 40px;
 }
 header a, footer a, nav a {
