@@ -29,6 +29,9 @@
 	margin-left: 20px;
 	font-size: 18px;
 }
+.user-info span, .user-tickets li {
+	font-size: 20px;
+}
 .user-block > div {
 	padding: 40px 30px 30px;
 	margin: 0 20px 20px 0;
@@ -36,6 +39,20 @@
 	
 	font-weight: 500;
 	font-size: 20px;
+}
+.user-block label {
+	color: #000;
+	text-decoration-line: underline;
+	font-size: 20px;
+	font-weight: 500;
+	margin: 30px 15px 0 0;
+}
+.user-block a {
+	color: #000;
+	margin-top: 25px;
+}
+.user-info > div {
+	margin-top: 30px;
 }
 .user-data > div {
 	display: flex;
@@ -67,7 +84,7 @@
 .user-tickets li {
 	display: flex;
 	align-items: center;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 }
 .user-tickets img {
 	width: 20px;
@@ -116,9 +133,6 @@
 		position: relative;
 		word-wrap: break-word;
 	}
-	.user-block > div {
-		font-size: 16px;
-	}
 	.profile .img-cont {
 		width: 130px;
 		height: 130px;
@@ -142,6 +156,9 @@
 		justify-content: center;
 	}
 	.user-block > div {
+		padding: 40px 30px 30px;
+		margin: 0 20px 20px 0;
+
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -151,12 +168,18 @@
 		font-size: 14px;
 		margin-left: 15px;
 	}
+	.user-info span, .user-tickets li, .user-block label {
+		font-size: 16px;
+	}
 }
 @media screen and (max-width: 1200px) {
 	.user-block > div {
 		width: 100%;
 	}
-	.profile .nav > div, .profile .nav > a, .button {
+	.profile .nav > div, .profile .nav > a, .button:not(.user-info .button) {
 		display: none;
+	}
+	.user-info .button {
+
 	}
 }

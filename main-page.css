@@ -55,6 +55,7 @@ select, option {
 	white-space: pre-wrap;
 	color: #212134;
 }
+
 @media screen and (max-width:1750px) {
 	.quality-cntainer img {
 		height: 75px;
@@ -140,7 +141,6 @@ select, option {
 }
 .info-list li {
 	margin: 0 20px 12px 0;
-	align-items: baseline;
 }
 @media screen and (max-width:1350px) {
 	h1 {
