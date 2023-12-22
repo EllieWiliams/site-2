@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+		<title>login</title>
+		<link rel="stylesheet" href="main.css">
+		<link rel="stylesheet" href="login.css">
+	</head>
+	<body class="login">
+		<input id="element-toggle" type="checkbox" />
+		<div class="modal-container"id="myModal">
+			<div class="modal" >
+				<div>
+					<h4>Забыли пароль?</h4>
+					<label class="button" for="element-toggle"><img src="close-btn.svg"></label>
+				</div>
+				<input type="text" placeholder="E-mail">
+				<span>На адрес электронной почты придет ссылка для восстановления пароля</span>
+				<input type="submit" value="Изменить пароль" class="border-btn">
+			</div>
+		</div>
+		<label class="free-block">
+			<input type=checkbox><img src="enter-icon.png">
+			<div class="free-text">
+				<h4>Зарегистрированные пользователи:</h4>
+				<ul>
+					<li>Зарабатывают бонусные баллы за каждый потраченный рубль</li>
+					<li>Получают 200 бонусов в день рождения</li>
+					<li>Могут использовать бонусную карту</li>
+				</ul>
+			</div>
+		</label>
+		<main>
+			<h2>ВХОД В ЛИЧНЫЙ КАБИНЕТ</h2>
+			<form>
+				<input type="text" placeholder="Имя пользователя или e-mail *">
+				<input type="text" placeholder="Пароль *">
+			</form>
+			<div>
+				<label style="margin-bottom: 15px;text-decoration:underline;" class="button" for="element-toggle">Забыли пароль ?</label>
+				<label class="remember">
+					<input type="checkbox" name=""> Запомнить меня
+					<span><!--<img src="v.svg">--></span>
+				</label>
+			</div>
+			<div>
+				<a class="special-link-n" href=""><input type="submit" value="">ВОЙТИ</a>
+				<div>
+					Ещё нет аккаунта?
+					<a href="reg.html">Создайте его сейчас</a>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>

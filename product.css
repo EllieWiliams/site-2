@@ -26,6 +26,7 @@
 }
 .statistics {
 	display: flex;
+	font-weight: 300;
 	font-size: 14px;
 }
 .statistics > div {
@@ -55,7 +56,7 @@
 	display: block;
 	background-color: #e2e2e2;
 	height: 12px;
-	padding: 3px;
+	padding: 2px;
 	border-radius: 20px;
 }
 .stripe > span > span {
@@ -77,7 +78,10 @@
 	margin: 0 30px 0 0;
 }
 .choose-ticket span {
+	display: inline-block;
+	margin-left: 15px;
 	width: 50px;
+	/*color: #2B7356;*/
 }
 .choose-ticket h2 {
 	margin: 0 0 0 80px;
@@ -130,6 +134,7 @@ li span {
 .colon {
 	font-size: 55px;
 	font-weight: 300;
+	transform: translateY(-5px);
 }
 
 
@@ -141,7 +146,8 @@ li span {
 	overflow-y: scroll;
 	display: grid;
 	grid-gap: 10px;
-	grid-template-columns: repeat(auto-fill, minmax(40px, max-content));
+	grid-template-columns: repeat(auto-fill, minmax(44px, max-content));
+	grid-template-rows: repeat(auto-fill, minmax(44px, max-content));
 	justify-items: center;
 	border: #DCDCDC solid 1px;
 	background: #F9F9F9;
@@ -159,7 +165,7 @@ li span {
 	width: 7px;
 	height: 22px;
 }
-.ticket-1, .ticket-2, .ticket-3{
+.take-tickets-container label span, .ticket-1, .ticket-2, .ticket-3 {
 	width: 38px;
 	height: 38px;
 	display: flex;
@@ -167,34 +173,53 @@ li span {
 	align-items: center;
 	border: #2B7356 solid 4px;
 	font-size: 20px;
+	color: #2B7356;
 	font-weight: 700;
 }
-.ticket-1 {
-	color: #2B7356;
-}
-.ticket-2 {
+.take-tickets-container input[type="checkbox"]:checked + label {
 	background: #2B7356;
 	color: #fff;
 }
-.ticket-3 {
+input:disabled + span, .ticket-3 {
 	border: #979797 solid 4px;
 	color: #979797;
 }
-
+label input:not(input:disabled) ~ span:hover {
+	cursor: pointer;
+	background: #2B7356;
+	color: #fff;
+}
+label input:checked ~ span, .ticket-2 {
+	background: #2B7356;
+	color: #fff;
+}
+.take-tickets-container input[type=checkbox] {
+	opacity: 0;
+	display: none;
+}
+.example {
+	width: 100%;
+}
 .example, .example > div {
 	display: flex;
 	align-items: center;
+	/*flex-wrap: wrap;*/
+}
+.example > div {
+	margin-bottom: 10px;
 }
 .example span {
 	margin-right: 20px;
 	margin-left: 12px;
 	font-size: 14px;
 	font-weight: 400;
-	white-space: nowrap;
+	white-space: pre-wrap;
+	text-align: left;
 }
 .choosed-ticket {
-	display: flex;
-	flex-direction: column;
+	/*display: flex;
+	flex-direction: column;*/
+	text-align: left;
 	font-size: 14px;
 	color: #212134;
 	font-weight: 400;
@@ -203,28 +228,65 @@ li span {
 	margin-left: 10px;
 	color: #2B7356;
 	font-size: 20px;
-}
+}*/
 @media all and (max-width: 768px) {
-  h1 {
-    font-size: calc(1.5rem * var(--smaller));
-  }
-  
-  li {
-    font-size: calc(1.125rem * var(--smaller));
-  }
-  
-  li span {
-    font-size: calc(3.375rem * var(--smaller));
-  }
+	h1 {
+		font-size: calc(1.5rem * var(--smaller));
+	}
+	
+	li {
+		font-size: calc(1.125rem * var(--smaller));
+	}
+	
+	li span {
+		font-size: calc(3.375rem * var(--smaller));
+	}
 }
 
 
+.countdown {
+  color: #212134;
+  font-weight: 300;
+  margin: 10px 0 30px;
+  display: flex;
+  align-items: baseline;
+  text-align: center;
+  font-size: 60px;
+}
 
-@media screen and (max-width: 1330px) {
+.countdown-number {
+  padding: 10px;
+  display: inline-block;
+}
+
+.countdown-time {
+  display: inline-block;
+}
+
+.countdown-text {
+  display: block;
+  font-weight: 300;
+  font-size: 20px;
+  color: #2B7356;
+}
+@media screen and (max-width: 1400px) {
 	.product {
 		flex-direction: column-reverse;
+		text-align: center;
 	}
 	.product > div {
 		width: 100%;
+	}
+	.product > div:nth-child(2) {
+		margin-bottom: 80px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.product > div:nth-child(1), .product > div:nth-child(2) {
+		padding: 0;
+	}
+	.example, .example > div {
+		flex-wrap: wrap;
 	}
 }

@@ -14,103 +14,297 @@
 		<main>
 			<section class="product">
 				<div>
-					<!-- место под слайдерom -->
+					
+
+
+
+
+
+
+
+<div class="banner-frame">
+					<div id="frame"> 
+						<input type="radio" name="frame" id="frame1" checked/>
+						<input type="radio" name="frame" id="frame2"/> 
+						<input type="radio" name="frame" id="frame3"/> 
+						<input type="radio" name="frame" id="frame4"/> 
+						<div id="slides"> 
+							<div id="overflow"> 
+								<div class="inner"> 
+									<div class="frame frame-1">
+										<div class="frame-content"> 
+										<div class="frame-mark">Шанс выиграть</div>
+											<h3>НОВЫЙ IPHONE 13X PRO SUPER SERIA В ЦВЕТЕ “SPACE GRAY”</h3>
+											<h5>Цена билета:</h5>
+											<h5 class="frame-price">200₽</h5>
+											<strike>400₽</strike>
+										</div> 
+										<img src="slider-img-1.png">
+									</div> 
+									<div class="frame frame-2">
+										<div class="frame-content"> 
+										<div class="frame-mark">Шанс выиграть</div>
+											<h3>НОВЫЙ IPHONE 13X PRO SUPER SERIA В ЦВЕТЕ “SPACE GRAY”</h3>
+											<h5>Цена билета:</h5>
+											<h5 class="frame-price">200₽</h5>
+											<strike>400₽</strike>
+										</div> 
+										<img src="slider-img-1.png">
+									</div>  
+									<div class="frame frame-3"> 
+										<div class="frame-content"> 
+										<div class="frame-mark">Шанс выиграть</div>
+											<h3>НОВЫЙ IPHONE 13X PRO SUPER SERIA В ЦВЕТЕ “SPACE GRAY”</h3>
+											<h5>Цена билета:</h5>
+											<h5 class="frame-price">200₽</h5>
+											<strike>400₽</strike>
+										</div> 
+										<img src="slider-img-1.png">
+									</div> 
+									<div class="frame frame_4"> 
+										<div class="frame-content"> 
+											<h3>Slide 4</h3> 
+										</div> 
+									</div> 
+								</div> 
+							</div> 
+						</div> 
+						<div id="controls"> 
+							<label for="frame1"></label> 
+							<label for="frame2"></label> 
+							<label for="frame3"></label> 
+							<label for="frame4"></label> 
+						</div> 
+						<div id="bullets"> 
+							<label for="frame1"></label> 
+							<label for="frame2"></label> 
+							<label for="frame3"></label> 
+							<label for="frame4"></label> 
+						</div> 
+					</div> 
+				</div>
+
+
+
+
+
+
+
+
+
+
 					<span class="product-description">Описание:</span>
 					<p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу показывает, как много веб-страниц всё ещё дожидаются своего настоящего рождения. За прошедшие годы текст Lorem Ipsum получил много версий. Некоторые версии появились по ошибке, некоторые - намеренно (например, юмористические варианты).</p>
 				</div>
+
+
+
 				<div>
+
+
 					<div class="accent" style="font-weight: 800;">Получи шанс выиграть</div>
 					<h1>Часы ELEGANCE или 140000₽ </h1>
 					<span>Осталось времени:</span>
-					<div class="container">
-						<div id="countdown">
-						<ul class="ul">
-							<li><span class="black" id="days"></span>days</li>
-							<span class="colon">:</span>
-							<li><span class="black" id="hours"></span>Hours</li>
-							<span class="colon">:</span>
-							<li><span class="black" id="minutes"></span>Minutes</li>
-							<span class="colon">:</span>
-							<li><span class="black" id="seconds"></span>Seconds</li>
-						</ul>
-						</div>
-						<div id="content" class="emoji">
-						<span>🥳</span>
-						<span>🎉</span>
-						<span>🎂</span>
-						</div>
-					</div>
-					<span>Выберите ваши “счастливые номера”</span>
+<div id="countdown" class="countdown">
+  <div class="countdown-number">
+    <span class="days countdown-time"></span>
+    <span class="countdown-text">Дни</span>
+  </div>
+  <span class="colon">:</span>
+  <div class="countdown-number">
+    <span class="hours countdown-time"></span>
+    <span class="countdown-text">Часы</span>
+  </div>
+  <span class="colon">:</span>
+  <div class="countdown-number">
+    <span class="minutes countdown-time"></span>
+    <span class="countdown-text">Минуты</span>
+  </div>
+  <span class="colon">:</span>
+  <div class="countdown-number">
+    <span class="seconds countdown-time"></span>
+    <span class="countdown-text">Секунды</span>
+  </div>
+</div>
+
+
+
+
+
+<input id="element-toggle" type="checkbox" />
+		<div class="modal-container"id="myModal">
+			<div class="modal" >
+				<label class="button" for="element-toggle"><img src="close-btn.svg"></label>
+				<span>Выберите ваши “счастливые номера”<span>:)</span></span>
 					<div class="take-tickets-container">
-						<div class="ticket-1">1</div>
-						<div class="ticket-1">1</div>
-						<div class="ticket-2">2</div>
-						<div class="ticket-3">3</div>
-						<div class="ticket-1">1</div>
-						<div class="ticket-1">1</div>
-						<div class="ticket-1">1</div>
-						<div class="ticket-1">1</div>
-						<div class="ticket-1">1</div>
-						<div class="ticket-1">1</div>
-						<div class="ticket-1">1</div>
-						<div class="ticket-1">1</div>
-						<div class="ticket-1">1</div>
-						<div class="ticket-1">1</div>
-						<div class="ticket-1">1</div>
-						<div class="ticket-1">1</div>
-						<div class="ticket-1">1</div>
-						<div class="ticket-1">1</div>
-						<div class="ticket-1">1</div>
-						<div class="ticket-1">1</div>
-						<div class="ticket-1">1</div>
-						<div class="ticket-1">1</div>
-						<div class="ticket-1">1</div>
-						<div class="ticket-1">1</div>
-						<div class="ticket-1">1</div>
-						<div class="ticket-1">1</div>
-						<div class="ticket-1">1</div>
-						<div class="ticket-1">1</div>
-						<div class="ticket-1">1</div>
-						<div class="ticket-1">1</div>
-						<div class="ticket-2">2</div>
-						<div class="ticket-3">3</div>
-						<div class="ticket-1">1</div>
-						<div class="ticket-1">1</div>
-						<div class="ticket-1">1</div>
-						<div class="ticket-1">1</div>
-						<div class="ticket-1">1</div>
-						<div class="ticket-1">1</div>
-						<div class="ticket-1">1</div>
-						<div class="ticket-1">1</div>
-						<div class="ticket-1">1</div>
-						<div class="ticket-1">1</div>
-						<div class="ticket-1">1</div>
-						<div class="ticket-1">1</div>
-						<div class="ticket-1">1</div>
-						<div class="ticket-1">1</div>
-						<div class="ticket-1">1</div>
-						<div class="ticket-1">1</div>
-						<div class="ticket-1">1</div>
-						<div class="ticket-1">1</div>
-						<div class="ticket-1">1</div>
-						<div class="ticket-1">1</div>
-						<div class="ticket-1">1</div>
-						<div class="ticket-1">1</div>
-						<div class="ticket-1">1</div>
-						<div class="ticket-1">1</div>
-						<div class="ticket-1">1</div>
-						<div class="ticket-1">1</div>
-						<div class="ticket-1">1</div>
-						<div class="ticket-1">1</div>
-						<div class="ticket-1">1</div>
-						<div class="ticket-1">1</div>
-						<div class="ticket-1">1</div>
-						<div class="ticket-2">2</div>
-						<div class="ticket-3">3</div>
-						<div class="ticket-1">1</div>
-						<div class="ticket-1">1</div>
-						<div class="ticket-1">1</div>
-						<div class="ticket-1">1</div>
+						<label>
+							<input type='checkbox'>
+							<span>1</span>
+						</label>
+						<label>
+							<input type='checkbox'>
+							<span>1</span>
+						</label>
+						<label>
+							<input type='checkbox'>
+							<span>1</span>
+						</label>
+						<label>
+							<input type='checkbox'>
+							<span>1</span>
+						</label>
+						<label>
+							<input type='checkbox'>
+							<span>1</span>
+						</label>
+						<label>
+							<input type='checkbox' disabled="disabled">
+							<span>16</span>
+						</label>
+						<label>
+							<input type='checkbox'>
+							<span>1</span>
+						</label>
+						<label>
+							<input type='checkbox'>
+							<span>1</span>
+						</label>
+						<label>
+							<input type='checkbox'>
+							<span>1</span>
+						</label>
+						<label>
+							<input type='checkbox'>
+							<span>1</span>
+						</label>
+						<label>
+							<input type='checkbox'>
+							<span>1</span>
+						</label>
+						<label>
+							<input type='checkbox' disabled="disabled">
+							<span>1</span>
+						</label>
+						<label>
+							<input type='checkbox'>
+							<span>1</span>
+						</label>
+						<label>
+							<input type='checkbox'>
+							<span>1</span>
+						</label>
+						<label>
+							<input type='checkbox'>
+							<span>1</span>
+						</label>
+						<label>
+							<input type='checkbox'>
+							<span>1</span>
+						</label>
+						<label>
+							<input type='checkbox'>
+							<span>1</span>
+						</label>
+						<label>
+							<input type='checkbox' disabled="disabled">
+							<span>1</span>
+						</label>
+						<label>
+							<input type='checkbox'>
+							<span>1</span>
+						</label>
+						<label>
+							<input type='checkbox'>
+							<span>1</span>
+						</label>
+						<label>
+							<input type='checkbox'>
+							<span>1</span>
+						</label>
+						<label>
+							<input type='checkbox'>
+							<span>1</span>
+						</label>
+						<label>
+							<input type='checkbox'>
+							<span>1</span>
+						</label>
+						<label>
+							<input type='checkbox' disabled="disabled">
+							<span>1</span>
+						</label>
+						<label>
+							<input type='checkbox'>
+							<span>1</span>
+						</label>
+						<label>
+							<input type='checkbox'>
+							<span>1</span>
+						</label>
+						<label>
+							<input type='checkbox'>
+							<span>1</span>
+						</label>
+						<label>
+							<input type='checkbox'>
+							<span>1</span>
+						</label>
+						<label>
+							<input type='checkbox'>
+							<span>1</span>
+						</label>
+						<label>
+							<input type='checkbox' disabled="disabled">
+							<span>1</span>
+						</label>
+						<label>
+							<input type='checkbox'>
+							<span>1</span>
+						</label>
+						<label>
+							<input type='checkbox'>
+							<span>1</span>
+						</label>
+						<label>
+							<input type='checkbox'>
+							<span>1</span>
+						</label>
+						<label>
+							<input type='checkbox'>
+							<span>1</span>
+						</label>
+						<label>
+							<input type='checkbox'>
+							<span>1</span>
+						</label>
+						<label>
+							<input type='checkbox' disabled="disabled">
+							<span>1</span>
+						</label>
+						<label>
+							<input type='checkbox'>
+							<span>1</span>
+						</label>
+						<label>
+							<input type='checkbox'>
+							<span>1</span>
+						</label>
+						<label>
+							<input type='checkbox'>
+							<span>1</span>
+						</label>
+						<label>
+							<input type='checkbox'>
+							<span>1</span>
+						</label>
+						<label>
+							<input type='checkbox'>
+							<span>1</span>
+						</label>
+						<label>
+							<input type='checkbox' disabled="disabled">
+							<span>1</span>
+						</label>
 					</div>
 					<div class="example">
 						<div>
@@ -123,7 +317,7 @@
 						</div>
 						<div>
 							<div class="ticket-3">3</div>
-							<span>Номер занятый кем-то другим</span>
+							<span>Номер, занятый кем-то другим</span>
 						</div>
 					</div>
 					<div class="choose-ticket">
@@ -138,44 +332,51 @@
 								<span>2850₽</span>
 							</div>
 						</div>
-					</div>-->
-					<!--<span>Розыграш может закончится раньше если все билеты будут куплены до окончания</span>
-					<div class="statistics">
-						<div>
-							<img src="ticket-icon.svg">
-							Всего <span>819</span> билетов
-						</div>
-						<div>
-							<img src="users-icon.svg">
-							До <span>7</span> билетов в одни руки
-						</div>
 					</div>
-					<div>
-						<div class="percents">
-							<h5 style="margin-right: 5px;">73%</h5>
-							продано
-						</div>
-						<div class="stripe">
-							<span><span></span></span>
-						</div>
+			</div>
+		</div>
+
+
+
+					<div class="hide-part">
+						<span>Розыграш может закончится раньше если все билеты будут куплены до окончания</span>
 						<div class="statistics">
 							<div>
-								Продано билетов:
-								<span>514/819</span>
+								<img src="ticket-icon.svg">
+								Всего <span>819</span> билетов
 							</div>
 							<div>
-								Билетов осталось:
-								<span>315</span>
+								<img src="users-icon.svg">
+								До <span>7</span> билетов в одни руки
+							</div>
+						</div>
+						<div>
+							<div class="percents">
+								<h5 style="margin-right: 5px;">73%</h5>
+								продано
+							</div>
+							<div class="stripe">
+								<span><span></span></span>
+							</div>
+							<div class="statistics">
+								<div>
+									Продано билетов:
+									<span>514/819</span>
+								</div>
+								<div>
+									Билетов осталось:
+									<span>315</span>
+								</div>
+							</div>
+						</div>
+						<div class="choose-ticket">
+							<label class="button border-btn" for="element-toggle">ВЫБРАТЬ БИЛЕТЫ</label>
+							<div>
+								<span>Стоимость билета:</span>
+								<h2>150₽</h2>
 							</div>
 						</div>
 					</div>
-					<div class="choose-ticket">
-						<button>ВЫБРАТЬ БИЛЕТЫ</button>
-						<div>
-							<span>Стоимость билета:</span>
-							<h2>150₽</h2>
-						</div>
-					</div>-->
 				</div>
 			</section>
 			<section>
@@ -328,48 +529,47 @@
 		</main>
 	</body>
 	<script>
-(function () {
-	const second = 1000,
-		minute = second * 60,
-		hour = minute * 60,
-		day = hour * 24;
-
-	//I'm adding this section so I don't have to keep updating this pen every year :-)
-	//remove this if you don't need it
-	let today = new Date(),
-		dd = String(today.getDate()).padStart(2, "0"),
-		mm = String(today.getMonth() + 1).padStart(2, "0"),
-		yyyy = today.getFullYear(),
-		nextYear = yyyy + 1,
-		dayMonth = "09/30/",
-		birthday = dayMonth + yyyy;
-	
-	today = mm + "/" + dd + "/" + yyyy;
-	if (today > birthday) {
-	birthday = dayMonth + nextYear;
-	}
-	//end
-	
-	const countDown = new Date(birthday).getTime(),
-		x = setInterval(function() {    
-
-		const now = new Date().getTime(),
-				distance = countDown - now;
-
-		document.getElementById("days").innerText = Math.floor(distance / (day)),
-			document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
-			document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
-			document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
-
-		//do something later when date is reached
-		if (distance < 0) {
-			document.getElementById("headline").innerText = "It's my birthday!";
-			document.getElementById("countdown").style.display = "none";
-			document.getElementById("content").style.display = "block";
-			clearInterval(x);
-		}
-		//seconds
-		}, 0)
-	}());
+function getTimeRemaining(endtime) {
+  var t = Date.parse(endtime) - Date.parse(new Date());
+  var seconds = Math.floor((t / 1000) % 60);
+  var minutes = Math.floor((t / 1000 / 60) % 60);
+  var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+  var days = Math.floor(t / (1000 * 60 * 60 * 24));
+  return {
+    'total': t,
+    'days': days,
+    'hours': hours,
+    'minutes': minutes,
+    'seconds': seconds
+  };
+}
+ 
+function initializeClock(id, endtime) {
+  var clock = document.getElementById(id);
+  var daysSpan = clock.querySelector('.days');
+  var hoursSpan = clock.querySelector('.hours');
+  var minutesSpan = clock.querySelector('.minutes');
+  var secondsSpan = clock.querySelector('.seconds');
+ 
+  function updateClock() {
+    var t = getTimeRemaining(endtime);
+ 
+    daysSpan.innerHTML = t.days;
+    hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+    minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+    secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+ 
+    if (t.total <= 0) {
+      clearInterval(timeinterval);
+    }
+  }
+ 
+  updateClock();
+  var timeinterval = setInterval(updateClock, 1000);
+}
+ 
+var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000); // for endless timer
+initializeClock('countdown', deadline);
 	</script>
+
 </html>

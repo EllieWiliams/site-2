@@ -146,6 +146,12 @@
 }
 		
 @media screen and (max-width: 1600px) {
+	.profile h5 {
+		margin-bottom: 20px;
+	}
+	.user-block a {
+		margin-top: 10px;
+	}
 	.user-data > div {
 		min-width: 420px;
 	}
@@ -156,7 +162,7 @@
 		justify-content: center;
 	}
 	.user-block > div {
-		padding: 40px 30px 30px;
+		padding: 20px;
 		margin: 0 20px 20px 0;
 
 		display: flex;
@@ -171,15 +177,24 @@
 	.user-info span, .user-tickets li, .user-block label {
 		font-size: 16px;
 	}
+	.user-tickets li {
+		margin-bottom: 10px;
+	}
 }
 @media screen and (max-width: 1200px) {
 	.user-block > div {
 		width: 100%;
 	}
-	.profile .nav > div, .profile .nav > a, .button:not(.user-info .button) {
+	.profile .nav > div, .profile .nav > a, .button:not(.modal .button) {
 		display: none;
+	}
+	.modal img {
+		display: block;
 	}
 	.user-info .button {
 
 	}
+}
+@media screen and (max-width: 0px) {
+	
 }
