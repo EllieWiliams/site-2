@@ -38,7 +38,7 @@
 	border: #E6E6E6 solid 1px;
 	
 	font-weight: 500;
-	font-size: 20px;
+	font-size: 25px;
 }
 .user-block label {
 	color: #000;
@@ -180,12 +180,18 @@
 	.user-tickets li {
 		margin-bottom: 10px;
 	}
+	.profile header {
+		padding: 20px 40px;
+	}
+	.user-info > div {
+		margin-top: 15px;
+	}
 }
 @media screen and (max-width: 1200px) {
 	.user-block > div {
 		width: 100%;
 	}
-	.profile .nav > div, .profile .nav > a, .button:not(.modal .button) {
+	.profile .nav > div, .profile .nav > a, .button:not(.modal .button, .user-info .button) {
 		display: none;
 	}
 	.modal img {
@@ -195,6 +201,29 @@
 
 	}
 }
-@media screen and (max-width: 0px) {
-	
+@media screen and (max-width: 600px) {
+	.user-tickets img, .user-block a, .user-info .button, .user-block h4:not(.card h4), h3:not(.winner h3, .inner h3), .user-info span, .user-tickets li, .user-block label {
+		font-size: 14px;
+	}
+	.profile .img-cont {
+		width: 65px;
+		height: 65px;
+	}
+	.profile .img-cont img {
+		transform: scale(0.2);
+	}
+	.user-block h4:not(.card h4) {
+		margin-left: 0 0 0 25px;
+	}
+	.user-info {
+		margin-left: 10px;
+		width: auto;
+	}
+	.user-data > div {
+		min-width: 100px;
+	}
+	.user-block > div {
+		margin: 0 0 20px;
+		font-size: 20px;
+	}
 }

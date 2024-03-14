@@ -24,6 +24,15 @@
 .product h1 {
 	margin-bottom: 50px;
 }
+.win .statistics h3 {
+	margin-left: 25px;
+	font-weight: 900;
+	color: #2B7356;
+}
+.win .statistics span {
+	font-weight: 400;
+	color: #212134;
+}
 .statistics {
 	display: flex;
 	font-weight: 300;
@@ -94,7 +103,7 @@
 
 
 
-:root {
+/*:root {
   --smaller: .75;
 }
 .container {
@@ -116,7 +125,7 @@ li span {
 .emoji span {
   font-size: 4rem;
   padding: 0 .5rem;
-}
+}*/
 .ul {
 	display: flex;
 	flex-direction: row;
@@ -146,8 +155,8 @@ li span {
 	overflow-y: scroll;
 	display: grid;
 	grid-gap: 10px;
-	grid-template-columns: repeat(auto-fill, minmax(44px, max-content));
-	grid-template-rows: repeat(auto-fill, minmax(44px, max-content));
+	grid-template-columns: repeat(auto-fill, minmax(50px, max-content));
+	grid-template-rows: repeat(auto-fill, minmax(50px, max-content));
 	justify-items: center;
 	border: #DCDCDC solid 1px;
 	background: #F9F9F9;
@@ -166,8 +175,8 @@ li span {
 	height: 22px;
 }
 .take-tickets-container label span, .ticket-1, .ticket-2, .ticket-3 {
-	width: 38px;
-	height: 38px;
+	width: 48px;
+	height: 48px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -203,7 +212,7 @@ label input:checked ~ span, .ticket-2 {
 .example, .example > div {
 	display: flex;
 	align-items: center;
-	/*flex-wrap: wrap;*/
+	flex-wrap: wrap;*
 }
 .example > div {
 	margin-bottom: 10px;
@@ -217,8 +226,6 @@ label input:checked ~ span, .ticket-2 {
 	text-align: left;
 }
 .choosed-ticket {
-	/*display: flex;
-	flex-direction: column;*/
 	text-align: left;
 	font-size: 14px;
 	color: #212134;
@@ -228,10 +235,10 @@ label input:checked ~ span, .ticket-2 {
 	margin-left: 10px;
 	color: #2B7356;
 	font-size: 20px;
-}*/
-@media all and (max-width: 768px) {
+}
+@media screen and (max-width: 768px) {
 	h1 {
-		font-size: calc(1.5rem * var(--smaller));
+		font-size: 25px;
 	}
 	
 	li {
@@ -240,6 +247,10 @@ label input:checked ~ span, .ticket-2 {
 	
 	li span {
 		font-size: calc(3.375rem * var(--smaller));
+	}
+	.product .accent {
+		font-size: 20px;
+		margin-bottom: 15px;
 	}
 }
 
@@ -272,7 +283,9 @@ label input:checked ~ span, .ticket-2 {
 @media screen and (max-width: 1400px) {
 	.product {
 		flex-direction: column-reverse;
-		text-align: center;
+	}
+	.product p, .product .product-description {
+		text-align: center;		
 	}
 	.product > div {
 		width: 100%;
@@ -288,5 +301,19 @@ label input:checked ~ span, .ticket-2 {
 	}
 	.example, .example > div {
 		flex-wrap: wrap;
+	}
+}
+@media screen and (max-width: 480px) {
+	.product {
+		font-size: 18px;
+	}
+	.countdown {
+		font-size: 40px;
+	}
+	.countdown-text {
+		font-size: 14px;
+	}
+	.colon {
+		font-size: 30px;
 	}
 }

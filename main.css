@@ -11,22 +11,18 @@
 	outline-color: #2B735640;
 }
 :hover, :hover:not(:hover) {
-	transition-duration: 0.3s;
+	transition:  0.6s ease;
 }
-/*a:hover, button:hover, label:hover, input[type=submit]:hover {
-	cursor: url(cursor-pointer.svg), pointer;
-}*/
 :hover:not(:hover) {}
 :focus {
 	outline: none;
 }
-a:hover/*:not(button, input[type=submit], .border-btn)*/ {
+a:hover:not(header a:hover) {
 	opacity: 0.7;
 }
 body {
 	width: 100%;
 	font-family: 'Montserrat', sans-serif;
-	/*cursor: url(cursor-1.svg), default;*/
 }
 input[type=text] {
 	font-size: 18px;
@@ -78,7 +74,7 @@ ul li:not(.free ul li, .info-list li) {
 }
 button, input[type=submit], .border-btn {
 	border: #2B7356 solid 5px;
-	padding: 16px 30px;
+	padding: 15px 30px;
 	background: #fff;
 	
 	color: #2B7356;
@@ -87,17 +83,21 @@ button, input[type=submit], .border-btn {
 	text-transform: uppercase;
 	white-space: nowrap;
 }
-/*.border-btn {
-	padding: 17px 25px;
-	border: #2B7356 solid 5px;
-}*/
+main {
+	margin-top: 150px;
+}
 main section:not(.info-block, .banner-block) {
 	padding: 70px 120px;
 	display: flex;
 	flex-wrap: wrap;
 }
 header {
-	padding: 50px 120px;
+	position: fixed;
+	z-index: 100;
+  top: 0;
+  width: 100%; 
+  transition: top 1s;
+	padding: 40px 120px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -109,6 +109,7 @@ header > div {
 	flex-direction: row;
 	width: 100%;
 	justify-content: space-between;
+	align-items: center;
 }
 header a:not(.profile header a) {
 	margin-left: 40px;
@@ -116,6 +117,17 @@ header a:not(.profile header a) {
 header a, footer a, nav a {
 	text-decoration: none;
 	color: #fff;
+}
+header a:hover {
+	display: inline-block;
+	transform: scale(1.1);
+	-webkit-transform:scale(1.1);
+	-moz-transform:scale(1.1);
+	/*transform-origin: right;*/
+}
+.logo {
+	width: 200px;
+	height: 60px;
 }
 nav, .nav {
 	width: 100%;
@@ -237,10 +249,6 @@ footer > div:nth-child(3) img {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	/*padding: 30px;
-	border-radius: 12px;
-	background: #fff;
-	box-shadow: 0px 0px 15px #00000080;*/
 }
 .profile .modal {
 	box-shadow: 0px 0px 15px #2B735660;
@@ -278,6 +286,7 @@ footer > div:nth-child(3) img {
 }
 .product .modal img {
 	opacity: 0.5;
+	margin-bottom: 15px;
 }
 .product .modal label {
 	align-self: flex-end;
@@ -331,7 +340,7 @@ footer > div:nth-child(3) img {
 }
 @media screen and (max-width: 1200px) {
 	main section:not(.info-block, .banner-block) {
-		padding: 50px;
+		padding: 0 40px;
 	}
 	h1 {
 		font-size: 45px;
@@ -361,7 +370,50 @@ footer > div:nth-child(3) img {
 		font-size: 14px;
 	}
 }
+@media screen and (max-width: 1280px) {
+	h1 {
+		font-size: 50px;
+		font-weight: 900;
+		color: #212134
+	}
+	h2 {
+		font-size: 35px;
+		margin-bottom: 20px;
+	}
+	h3:not(.winner h3, .inner h3) {
+		font-size: 25px;
+		margin-bottom: 10px;
+	}
+	h5:not(.inner h5, .user-block h5, .product h5) {
+		font-size: 18px;
+		margin-buttom: 25px;
+	}
+	.accent {
+		font-size: 35px;
+	}
+
+}
 @media screen and (max-width: 800px) {
+	h1 {
+		font-size: 45px;
+	}
+	h2 {
+		font-size: 30px;
+		margin-bottom: 20px;
+	}
+	h3:not(.winner h3, .inner h3) {
+		font-size: 20px;
+		margin-bottom: 10px;
+	}
+	h5:not(.inner h5, .user-block h5, .product h5) {
+		font-size: 15px;
+		margin-buttom: 20px;
+	}
+	.accent {
+		font-size: 30px;
+	}
+
+
 	.product .modal-container {
 		transform: translate(0, -50px);
 	}
@@ -369,8 +421,14 @@ footer > div:nth-child(3) img {
 		padding: 30px;
 		max-width: 480px;
 	}
+	button, input[type=submit], .border-btn {
+		padding: 15px;
+	}
 }
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 600px) {
+	h5:not(.inner h5) {
+		font-size: 16px;
+	}
 
 }
 @media screen and (max-width: 500px) {
