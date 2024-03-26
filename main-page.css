@@ -13,6 +13,8 @@ select, option {
 	background: #212134;
 	display: flex;
 	justify-content: space-between;
+	position: relative;
+	z-index: 1;
 }
 .banner-block .text-block {
 	width: 500px;
@@ -79,6 +81,11 @@ select, option {
 }
 .info-list li {
 	margin: 0 20px 12px 0;
+}
+.nav img {
+	width: 30px;
+	height: 30px;
+	margin-left: 15px;
 }
 @media screen and (max-width:1750px) {
 	.quality-cntainer img {
@@ -183,7 +190,7 @@ select, option {
 		margin-top: 45px;
 	}
 	.banner-block .text-block h2 {
-		/*margin-bottom: 40px;*/
+		margin-bottom: 40px;
 		display: block;
 		transform: translateY(-20px);
 		width: 1000px;

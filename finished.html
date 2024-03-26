@@ -11,17 +11,29 @@
 		<link rel="stylesheet" href="slider.css">
 	</head>
 	<body>
-		<header class="navbar">
+<header class="navbar">
 			<div>
 				<img class="logo" src="logo.png">
-				<div clsss="nav-points">
+				<div>
 					<a href="">Текущие конкурсы</a>
 					<a href="">История конкурсов</a>
 					<a href="">Подарочные карты</a>
 					<a href="">Победители</a>
 					<a href=""></a>
 				</div>
-				<div>
+				
+				<div class="dropdown">
+					<span><img src="burger.svg"></img></span>
+					<div class="dropdown-content">
+						<a href="">Текущие конкурсы</a>
+						<a href="">История конкурсов</a>
+						<a href="">Подарочные карты</a>
+						<a href="">Победители</a>
+						<a href=""></a>
+					</div>
+				</div>
+
+				<div class="icon-bar">
 					<a href="#"><img src="users-icon.svg"></a>
 					<a href="#"><img src=""></a>
 					<a href="#"><img src=""></a>
@@ -65,17 +77,15 @@
   <div class="text">Caption Three</div>
 </div>
 
-<a class="prev" onclick="plusSlides(-1)">❮</a>
-<a class="next" onclick="plusSlides(1)">❯</a>
-
 </div>
-<br>
 
-<div style="width: 100%; text-align:center;">
+<div class="dots" style="width: 100%; text-align:center;">
+	<a class="prev" onclick="plusSlides(-1)">❮</a>
   <span class="dot" onclick="currentSlide(1)"></span> 
   <span class="dot" onclick="currentSlide(2)"></span> 
   <span class="dot" onclick="currentSlide(3)"></span>
   <span class="dot" onclick="currentSlide(4)"></span> 
+	<a class="next" onclick="plusSlides(1)">❯</a>
 </div>
 
 
@@ -522,6 +532,22 @@
 			</section>
 		</main>
 	</body>
+	<script>
+	let header = document.querySelector(".navbar")
+	let logo = document.querySelector(".logo")
+	window.onscroll = function(){
+		
+if(window.scrollY > 100){
+	header.style.background = "#5B5B65";
+	header.style.padding = "16px 120px";
+
+}
+else{
+	header.style.background = "#212134";
+	header.style.padding = "40px 120px"; 
+	}
+	}
+</script>
 	<script>
 let slideIndex = 1;
 showSlides(slideIndex);

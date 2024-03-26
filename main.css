@@ -10,7 +10,7 @@
 :focus {
 	outline-color: #2B735640;
 }
-:hover, :hover:not(:hover) {
+:hover, :not(:hover) {
 	transition:  0.6s ease;
 }
 :hover:not(:hover) {}
@@ -38,11 +38,17 @@ h2 {
 	color: #212134;
 	margin-bottom: 20px;
 }
-h3:not(.winner h3, .inner h3) {
+h3:not(.winner h3, .inner h3, .slide-text h3) {
 	font-size: 30px;
 	font-weight: 900;
 	color: #212134;
 	margin-bottom: 10px;
+}
+.slide-text h3 {
+	margin-bottom: 20px;
+	font-size: 30px;
+	font-weight: 900;
+	color: #fff;
 }
 h4 {
 	font-size: 20px;
@@ -83,8 +89,8 @@ button, input[type=submit], .border-btn {
 	text-transform: uppercase;
 	white-space: nowrap;
 }
-main {
-	margin-top: 150px;
+main:not(.login main) {
+	margin-top: 140px;
 }
 main section:not(.info-block, .banner-block) {
 	padding: 70px 120px;
@@ -111,20 +117,53 @@ header > div {
 	justify-content: space-between;
 	align-items: center;
 }
-header a:not(.profile header a) {
+header a:not(.profile header a, .dropdown a) {
 	margin-left: 40px;
 }
 header a, footer a, nav a {
 	text-decoration: none;
 	color: #fff;
 }
-header a:hover {
+header a:hover:not(.dropdown a:hover) {
 	display: inline-block;
 	transform: scale(1.1);
 	-webkit-transform:scale(1.1);
 	-moz-transform:scale(1.1);
 	/*transform-origin: right;*/
 }
+.dropdown {
+	position: relative;
+	display: none;
+}
+
+.dropdown-content {
+	display: none;
+	margin-left: -150px;
+	position: absolute;
+	background-color: #212134;
+	min-width: 250px;
+	min-height: 180px;
+	/*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
+	padding: 15px;
+	z-index: 15;
+}
+.dropdown-content a {
+	position: relative;
+	/*margin-top: 15px;*/
+	padding: 8px 15px;
+}
+.dropdown:hover .dropdown-content {
+	display: flex;
+	flex-direction: column;
+	/*justify-content: flex-end;*/
+	align-items: flex-end;
+	cursor: pointer;
+}
+.dropdown-content a:hover {
+	background: #5CB17633;
+	color: #2B7356;
+}
+
 .logo {
 	width: 200px;
 	height: 60px;
@@ -143,6 +182,10 @@ nav {
 nav > span {
 	display: flex;
 	align-items: center;
+}
+.nav a {
+	color: #fff;
+	text-decoration: none;
 }
 footer {
 	padding: 92px 120px;
@@ -309,11 +352,22 @@ footer > div:nth-child(3) img {
 		font-size: 35px;
 	}
 }
+
+
+
 @media screen and (max-width: 1540px)  {
 	h2 {
 		font-size: 40px;
 	}
+	.navbar > div > div:nth-child(2), header .icon-bar {
+		display: none;
+	}
+	.dropdown {
+		display: inline-block;
+	}
 }
+
+
 @media screen and (max-width: 1400px) {
 	.product .modal-container {
 		width: 100%;
@@ -340,7 +394,7 @@ footer > div:nth-child(3) img {
 }
 @media screen and (max-width: 1200px) {
 	main section:not(.info-block, .banner-block) {
-		padding: 0 40px;
+		padding: 40px;
 	}
 	h1 {
 		font-size: 45px;
