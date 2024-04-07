@@ -52,40 +52,37 @@
 
 
 <div class="slideshow-container">
+	<a class="prev" onclick="plusSlides(-1)">❮</a>
+	<a class="next" onclick="plusSlides(1)">❯</a>
 
 <div class="mySlides fade">
   <div class="numbertext">1 / 4</div>
   <img src="slider-img-1.png" style="width:100%">
-  <div class="text">Caption Text</div>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">2 / 4</div>
   <img src="slider-img-1.png" style="width:100%">
-  <div class="text">Caption Two</div>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">3 / 4</div>
   <img src="slider-img-1.png" style="width:100%">
-  <div class="text">Caption Three</div>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">4 / 4</div>
   <img src="slider-img-1.png" style="width:100%">
-  <div class="text">Caption Three</div>
 </div>
 
 </div>
 
 <div class="dots" style="width: 100%; text-align:center;">
-	<a class="prev" onclick="plusSlides(-1)">❮</a>
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span>
-  <span class="dot" onclick="currentSlide(4)"></span> 
-	<a class="next" onclick="plusSlides(1)">❯</a>
+  <span class="dot" onclick="currentSlide(1)"><img src="slider-img-1.png"></img></span> 
+  <span class="dot" onclick="currentSlide(2)"><img src="slider-img-1.png"></img></span> 
+  <span class="dot" onclick="currentSlide(3)"><img src="slider-img-1.png"></img></span>
+  <span class="dot" onclick="currentSlide(4)"><img src="slider-img-1.png"></img></span> 
+  <span class="dot" onclick="currentSlide(5)"><img src="slider-img-1.png"></img></span> 
 </div>
 
 
@@ -535,16 +532,18 @@
 	<script>
 	let header = document.querySelector(".navbar")
 	let logo = document.querySelector(".logo")
+	let dropdown = document.querySelector(".dropdown-content")
 	window.onscroll = function(){
 		
-if(window.scrollY > 100){
+if(window.scrollY > 100) {
 	header.style.background = "#5B5B65";
 	header.style.padding = "16px 120px";
-
+	dropdown.style.background = "#5B5B65";
 }
 else{
 	header.style.background = "#212134";
-	header.style.padding = "40px 120px"; 
+	header.style.padding = "40px 120px";
+	dropdown.style.background = "#212134";
 	}
 	}
 </script>

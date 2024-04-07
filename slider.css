@@ -33,6 +33,23 @@ img {vertical-align: middle;}
   background-color: rgba(0,0,0,0.8);
 }
 
+
+
+
+
+.product .slideshow-container {
+	position: relative;
+}
+.product .prev, .product .next {
+	position: relative;
+	z-index: 90;
+
+	/*transform: translateY(-100px);*/
+	border-radius: 5px;
+}
+.product .next {
+	right: 0px;
+}
 /* Caption text */
 .text {
   color: #f2f2f2;
@@ -61,6 +78,16 @@ img {vertical-align: middle;}
 	position: relative;
 	z-index: 2;
 	transform: translateY(-60px);
+}
+.product .dots {
+	margin-left: 0;
+	mar
+	/*transform: translateY(-30px);*/
+	display: inline-grid;
+	grid-template-columns: repeat(5, 1fr);
+}
+.dots img {
+	width: 150px;
 }
 .dot {
   cursor: pointer;

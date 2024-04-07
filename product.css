@@ -281,6 +281,9 @@ label input:checked ~ span, .ticket-2 {
   color: #2B7356;
 }
 @media screen and (max-width: 1400px) {
+	.product h1 {
+		text-align: center;
+	}
 	.product {
 		flex-direction: column-reverse;
 	}
